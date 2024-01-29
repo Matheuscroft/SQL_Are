@@ -1,0 +1,4 @@
+@CodigoUsuarioLogado INT
+
+SELECT usu_Codigo FROM Usuario
+WHERE usu_nome = (SELECT usu_Reserva3 FROM Usuario WHERE usu_Codigo = @CodigoUsuarioLogado)

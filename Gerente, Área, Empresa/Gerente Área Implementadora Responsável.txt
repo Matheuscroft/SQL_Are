@@ -1,0 +1,10 @@
+@Codigo INT
+
+SELECT usu_Codigo, usu_Nome FROM Usuario
+
+WHERE (
+	(@Codigo IN (137, 138, 139) AND usu_Codigo = 456) --NET SEC, DATA CENTER, SERVICE DESK + MANRICH
+	OR (@Codigo = 140 AND usu_Codigo = 462) --CLOUD CONTACT CENTER + SABURO
+	OR (@Codigo = 129 AND usu_Codigo = 616) --PS + JULIANO
+	OR (@Codigo = 134 AND usu_Codigo = 717) --TELECOM + TAKEO
+)

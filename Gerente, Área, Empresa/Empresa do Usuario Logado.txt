@@ -1,0 +1,7 @@
+@Codigo INT
+
+SELECT emp_Nome FROM Empresa
+
+INNER JOIN Usuario ON emp_Codigo = usu_CodigoEmpresa
+
+WHERE usu_Codigo = @Codigo
